@@ -118,7 +118,7 @@ class BW4TWorld:
         script_dir = os.path.dirname(__file__)
         media_folder = os.path.abspath(os.path.join(script_dir, "media"))
         self._builder.startup(media_folder=media_folder)
-        self._builder.add_logger(BW4TLogger, save_path='.')
+        # self._builder.add_logger(BW4TLogger, save_path='.')
 
         self._gridworld = self._builder.worlds(nr_of_worlds=1).__next__()
 
