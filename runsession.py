@@ -30,5 +30,5 @@ if __name__ == "__main__":
     print("Started world...")
     world=BW4TWorld(agents).run()
     print("DONE!")
-    print(Statistics(world.getLogger().getFileName()))
+    # print(Statistics(world.getLogger().getFileName()))
     
