@@ -219,33 +219,43 @@ class BW4TWorld:
                     sense_capability=human_sense_capability)
 
             elif agent['botclass'] == Tiger and agent['name'] == "tiger1":
-                tiger_loc = (4,11)
+                tiger_loc = (4, 11)
                 self._builder.add_agent(tiger_loc, brain,
-                    team=team_name, name=agent['name'],
-                    sense_capability=tiger_sense_capability)
+                                        team=team_name, name=agent['name'],
+                                        visualize_shape = 2,
+                                        visualize_colour = "#FFC300",
+                                        sense_capability=tiger_sense_capability)
 
             elif agent['botclass'] == Tiger and agent['name'] == "tiger2":
                 tiger_loc = (10, 5)
                 self._builder.add_agent(tiger_loc, brain,
                                         team=team_name, name=agent['name'],
+                                        visualize_shape = 2,
+                                        visualize_colour="#FFC300",
                                         sense_capability=tiger_sense_capability)
 
             elif agent['botclass'] == Tiger and agent['name'] == "tiger3":
                 tiger_loc = (19, 11)
                 self._builder.add_agent(tiger_loc, brain,
                                         team=team_name, name=agent['name'],
+                                        visualize_shape=2,
+                                        visualize_colour="#FFC300",
                                         sense_capability=tiger_sense_capability)
 
             elif agent['botclass'] == Fire and agent['name'] == 'fire1':
-                fire_loc = (4, 17)
-                self._builder.add_agent(fire_loc, brain,
-                team=team_name, name=agent['name'],
-                sense_capability=fire_sense_capability)
+                                        fire_loc = (4, 17)
+                                        self._builder.add_agent(fire_loc, brain,
+                                        team=team_name, name=agent['name'],
+                                        visualize_shape=2,
+                                        visualize_colour="#FF0000",
+                                        sense_capability=fire_sense_capability)
 
             elif agent['botclass'] == Fire and agent['name'] == 'fire2':
                 fire_loc = (16, 5)
                 self._builder.add_agent(fire_loc, brain,
                                         team=team_name, name=agent['name'],
+                                        visualize_shape=2,
+                                        visualize_colour="#FF0000",
                                         sense_capability=fire_sense_capability)
 
             else:
