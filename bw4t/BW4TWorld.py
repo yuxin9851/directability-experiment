@@ -21,7 +21,7 @@ from agents1.fire import Fire
 #FIMAL, DO NOT MODIFY
 DEFAULT_WORLDSETTINGS: dict={
     'deadline': 2000, # Ticks after which world terminates anyway 
-    'tick_duration': 0.1, # Set to 0 for fastest possible runs.
+    'tick_duration': 0, # Set to 0 for fastest possible runs.
     'random_seed': 1,
     'verbose': False,
     'matrx_paused':True,
